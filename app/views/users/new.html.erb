@@ -1,0 +1,7 @@
+<h1>Welcome</h1>
+<%= flash[:notice]%>
+<%= flash[:error]%>
+<h1>if already an user? ->login </h1>
+<button><%=link_to "Login","/users/login" %></button>
+<h1 class="sign_up">New user?->Add Account</h1>
+<button><%=link_to "Sign Up","/users/signup" %></button>

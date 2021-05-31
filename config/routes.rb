@@ -1,3 +1,16 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  root 'users#new'
+
+  get 'users/login'
+  get 'users/signup'
+  get 'users/welcome'
+
+  post '/login',
+  controller: "users",
+  action: "login"
+
+  post '/signup',
+  controller: "users",
+  action: "signup"
+
 end
